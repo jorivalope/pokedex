@@ -32,6 +32,7 @@ PokemonCard.propTypes = {
 
 const Card = styled.div`
   display: flex;
+  background: #9EDDFF; 
   border: 1px solid black;
   padding: 10px;
   margin: 10px;

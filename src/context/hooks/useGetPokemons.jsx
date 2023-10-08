@@ -6,7 +6,7 @@ export function useGetPokemons() {
 
   useEffect(() => {
     const getPokemons = async () => {
-      const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=10');
+      const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=50');
       const pokemonResponse = await Promise.all(
         response.data.results.map(async (pokemon) => {
         const pokemonData = await axios.get(pokemon.url);
